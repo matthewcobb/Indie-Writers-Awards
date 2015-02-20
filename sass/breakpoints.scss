@@ -1,0 +1,16 @@
+/* ===========================================================
+File: Media query breakpoints
+Author: Matthew Cobb
+/* ===========================================================*/
+
+$bp-xx-small:400px;
+$bp-x-small:500px;
+$bp-small:600px;
+$bp-medium:768px;
+$bp-m-large:900px;
+$bp-large:1025px;
+$bp-x-large:1100px;
+$bp-xx-large:1200px;
+
+//eg usage
+//@media (min-width:$bp-small) {}
