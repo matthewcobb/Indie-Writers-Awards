@@ -115,6 +115,21 @@ body{
   }
 }
 
+.navbar{
+  margin-bottom: 0px;
+  background: $color-turq;
+  border:none;
+  border-radius: 0px;
+}
 
+  @media (min-width:$bp-medium) {
+        .navbar ul{
+          float: right;
+        }
+      }
+
+.navbar-header{
+  border-bottom:none;
+}
 
 

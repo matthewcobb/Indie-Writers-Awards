@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6, a, p {
 h1 {
   font-family: 'Glegoo', serif;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 /* line 15, ../sass/typography.scss */
@@ -43,16 +43,87 @@ h2, h3 {
   line-height: 22px;
 }
 
-/* line 1, ../sass/nav.scss */
-.nav-collapse {
-  position: relative;
-  height: 0px;
-  overflow: hidden;
+/* line 3, ../sass/nav.scss */
+.navbar-default {
+  background-color: #13D7B8;
+  border: none;
 }
-
-/* line 8, ../sass/nav.scss */
-.active {
-  height: 150px;
+/* line 7, ../sass/nav.scss */
+.navbar-default .navbar-text {
+  color: #fff;
+}
+/* line 12, ../sass/nav.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  text-align: center;
+  background: #128974;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  /* line 12, ../sass/nav.scss */
+  .navbar-default .navbar-nav > li > a {
+    background: none;
+    font-size: 14px;
+  }
+}
+/* line 23, ../sass/nav.scss */
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #128974;
+  background-color: none;
+}
+/* line 30, ../sass/nav.scss */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: none;
+}
+/* line 38, ../sass/nav.scss */
+.navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
+  color: #fff;
+  background-color: none;
+}
+/* line 47, ../sass/nav.scss */
+.navbar-default .navbar-toggle {
+  border: none;
+}
+/* line 49, ../sass/nav.scss */
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #128974;
+}
+/* line 53, ../sass/nav.scss */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+/* line 58, ../sass/nav.scss */
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border: none;
+}
+/* line 67, ../sass/nav.scss */
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: none;
+  color: #fff;
+}
+@media (max-width: 786px) {
+  /* line 78, ../sass/nav.scss */
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff;
+  }
+  /* line 80, ../sass/nav.scss */
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #fff;
+    background-color: none;
+  }
+  /* line 86, ../sass/nav.scss */
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > li > a > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a > .active > a:focus {
+    color: #fff;
+    background-color: none;
+  }
+  /* line 94, ../sass/nav.scss */
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > li > a > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a > .disabled > a:focus {
+    color: #fff;
+    background-color: none;
+  }
 }
 
 /* line 8, ../sass/main.scss */
@@ -206,4 +277,23 @@ body {
     font-size: 20px;
     line-height: 28px;
   }
+}
+
+/* line 118, ../sass/main.scss */
+.navbar {
+  margin-bottom: 0px;
+  background: #13D7B8;
+  border: none;
+  border-radius: 0px;
+}
+
+@media (min-width: 768px) {
+  /* line 126, ../sass/main.scss */
+  .navbar ul {
+    float: right;
+  }
+}
+/* line 131, ../sass/main.scss */
+.navbar-header {
+  border-bottom: none;
 }

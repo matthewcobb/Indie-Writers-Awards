@@ -1,10 +1,105 @@
-.nav-collapse{
-  position: relative;
-  height: 0px;
-  overflow: hidden;
-   ul{}
-}
+@import 'colors.scss';
 
-.active{
-  height: 150px;
+.navbar-default {
+  background-color: $color-turq;
+  border:none;
+
+  .navbar-text {
+    color: $color-white;
+  }
+
+  .navbar-nav {
+    > li > a {
+      color: $color-white;
+      text-align: center;
+      background:$color-dark-turq;
+      font-family: 'Lato', sans-serif;
+      font-size: 20px;
+      @media (min-width:$bp-medium){
+        background:none;
+        font-size:14px;
+      }
+
+      &:hover,
+      &:focus {
+        color: $color-dark-turq;
+        background-color:none;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $color-white;
+        background-color:none;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $color-white;
+        background-color:none;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    border:none;
+    &:hover,
+    &:focus {
+      background-color: $color-dark-turq;
+    }
+    .icon-bar {
+      background-color: $color-white;
+    }
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    border:none;
+  }
+
+  // Dropdown menu items
+  .navbar-nav {
+    // Remove background color from open dropdown
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: none;
+        color: $color-white;
+      }
+    }
+
+    @media (max-width: 786px) {
+      // Dropdowns get custom display when collapsed
+      .open .dropdown-menu {
+        > li > a {
+          color: $color-white;
+          &:hover,
+          &:focus {
+            color: $color-white;
+            background-color: none;
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $color-white;
+            background-color: none;
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $color-white;
+            background-color: none;
+          }
+        }
+      }
+    }
+  }
+  }
 }
