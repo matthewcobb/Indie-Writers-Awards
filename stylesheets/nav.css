@@ -1,0 +1,11 @@
+/* line 1, ../sass/nav.scss */
+.nav-collapse {
+  position: relative;
+  height: 0px;
+  overflow: hidden;
+}
+
+/* line 8, ../sass/nav.scss */
+.active {
+  height: 150px;
+}

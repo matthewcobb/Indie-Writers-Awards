@@ -4,6 +4,24 @@ Author: Matthew Cobb
 /* ===========================================================*/
 @import url(http://fonts.googleapis.com/css?family=Glegoo:400,700);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic);
+@media (min-width: 768px) {
+  /* line 19, ../sass/breakpoints.scss */
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 24, ../sass/breakpoints.scss */
+  .container {
+    width: 940px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 29, ../sass/breakpoints.scss */
+  .container {
+    width: 940px;
+  }
+}
 /* line 4, ../sass/typography.scss */
 h1, h2, h3, h4, h5, h6, a, p {
   margin: 0;
@@ -22,93 +40,170 @@ h2, h3 {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 16px;
+  line-height: 22px;
 }
 
-/* line 7, ../sass/main.scss */
+/* line 1, ../sass/nav.scss */
+.nav-collapse {
+  position: relative;
+  height: 0px;
+  overflow: hidden;
+}
+
+/* line 8, ../sass/nav.scss */
+.active {
+  height: 150px;
+}
+
+/* line 8, ../sass/main.scss */
 html {
   width: 100%;
   height: 100%;
 }
 
-/* line 12, ../sass/main.scss */
+/* line 13, ../sass/main.scss */
 body {
   width: 100%;
   height: 100%;
 }
 
-/* line 17, ../sass/main.scss */
+/* line 18, ../sass/main.scss */
+.burger {
+  position: absolute;
+  z-index: 2;
+  width: 30px;
+  top: 15px;
+  height: 21px;
+}
+@media (min-width: 768px) {
+  /* line 18, ../sass/main.scss */
+  .burger {
+    display: none;
+  }
+}
+
+/* line 29, ../sass/main.scss */
 .hero {
   background: #13D7B8;
   height: 360px;
   text-align: center;
 }
 @media (min-width: 500px) {
-  /* line 17, ../sass/main.scss */
+  /* line 29, ../sass/main.scss */
   .hero {
     height: 400px;
   }
 }
 @media (min-width: 600px) {
-  /* line 17, ../sass/main.scss */
+  /* line 29, ../sass/main.scss */
   .hero {
     height: 500px;
   }
 }
-/* line 28, ../sass/main.scss */
-.hero img {
-  margin: 50px 0px 50px 0px;
+/* line 40, ../sass/main.scss */
+.hero .logo {
+  margin: 40px 0px 40px 0px;
 }
 @media (min-width: 500px) {
-  /* line 28, ../sass/main.scss */
-  .hero img {
+  /* line 40, ../sass/main.scss */
+  .hero .logo {
     margin: 60px 0px 60px 0px;
   }
 }
 @media (min-width: 600px) {
-  /* line 28, ../sass/main.scss */
-  .hero img {
+  /* line 40, ../sass/main.scss */
+  .hero .logo {
     margin: 70px 0px 70px 0px;
   }
 }
-/* line 38, ../sass/main.scss */
+/* line 50, ../sass/main.scss */
 .hero h1 {
   color: #fff;
   text-align: center;
   margin: 0px 0px 5px 0px;
 }
 @media (min-width: 500px) {
-  /* line 38, ../sass/main.scss */
+  /* line 50, ../sass/main.scss */
   .hero h1 {
     font-size: 35px;
   }
 }
 @media (min-width: 600px) {
-  /* line 38, ../sass/main.scss */
+  /* line 50, ../sass/main.scss */
   .hero h1 {
     font-size: 50px;
   }
 }
-/* line 49, ../sass/main.scss */
+/* line 61, ../sass/main.scss */
 .hero h2 {
   color: #fff;
   text-align: center;
 }
 @media (min-width: 500px) {
-  /* line 49, ../sass/main.scss */
+  /* line 61, ../sass/main.scss */
   .hero h2 {
     font-size: 18px;
   }
 }
-/* line 57, ../sass/main.scss */
+/* line 69, ../sass/main.scss */
 .hero h3 {
   color: #128974;
   text-align: center;
-  margin: 20px 0 10px 0;
+  margin: 30px 0 20px 0;
 }
 @media (min-width: 500px) {
-  /* line 57, ../sass/main.scss */
+  /* line 69, ../sass/main.scss */
   .hero h3 {
     font-size: 18px;
-    margin: 40px 0 10px 0;
+    margin: 20px 0 20px 0;
+  }
+}
+@media (min-width: 600px) {
+  /* line 69, ../sass/main.scss */
+  .hero h3 {
+    font-size: 18px;
+    margin: 40px 0 30px 0;
+  }
+}
+/* line 83, ../sass/main.scss */
+.hero a {
+  font-size: 16px;
+  color: #13D7B8;
+}
+/* line 88, ../sass/main.scss */
+.hero .btn-default {
+  border: 0px;
+  width: 100%;
+  padding: 12px 0px 12px 0px;
+}
+@media (min-width: 500px) {
+  /* line 88, ../sass/main.scss */
+  .hero .btn-default {
+    width: 200px;
+  }
+}
+
+/* line 100, ../sass/main.scss */
+.main-section h1 {
+  font-size: 20px;
+  color: #13D7B8;
+  margin: 30px 0px 10px 0px;
+}
+@media (min-width: 600px) {
+  /* line 100, ../sass/main.scss */
+  .main-section h1 {
+    font-size: 28px;
+    margin: 60px 0 10px 0;
+  }
+}
+/* line 109, ../sass/main.scss */
+.main-section h2 {
+  font-size: 16px;
+}
+@media (min-width: 600px) {
+  /* line 109, ../sass/main.scss */
+  .main-section h2 {
+    font-size: 20px;
+    line-height: 28px;
   }
 }

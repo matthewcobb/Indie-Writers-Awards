@@ -1,0 +1,11 @@
+/* line 1, /Users/Jonkob/Code/indie/sass/nav.scss */
+.nav-collapse {
+  position: relative;
+  height: 0px;
+  overflow: hidden; }
+
+/* line 8, /Users/Jonkob/Code/indie/sass/nav.scss */
+.active {
+  height: 150px; }
+
+/*# sourceMappingURL=nav.css.map */

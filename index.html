@@ -12,14 +12,25 @@
     <![endif]-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link href="stylesheets/main.css" rel="stylesheet">
+
+    <script src="js/responsive-nav.min.js"></script>
   </head>
   <body>
+     <div class="nav-collapse">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Experts</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
     <div class="container-fluid">
       <div class="row hero">
         <div class="col-xs-12">
+          <div class="burger"><a href="#" id="burger"><img src="img/burger.svg" alt="burger"></a></div>
+
           <div class="row">
             <div class="col-xs-12">
-              <img src="img/parrot.svg" width="75px" height="81px" alt="Reedsy">
+              <img class="logo" src="img/parrot.svg" width="75px" height="81px" alt="Reedsy">
             </div>
           </div>
           <div class="row">
@@ -31,13 +42,14 @@
           <div class="row">
             <div class="col-xs-12">
               <h3>Sign up and submit your book to enter</h3>
+              <a class="btn btn-default" href="#" role="button">Sign up</a>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="container">
-      <div class="row">
+      <div class="row main-section">
         <div class="col-xs-12">
           <h1>It’s time indies got rewarded!</h1>
           <h2>The indie author awards are here to celebrate the extraordinary talents within the indie author community. Authors, if you published a book to a major store within the last 2 years and it’s over 40,000 words, submit your book for the review!</h2>
@@ -48,5 +60,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/iefix.js"></script>
+    <script>
+
+      $( document ).ready(function() {
+          $('#burger').click(function() {
+          $('#nav-collapse').addClass('active');
+
+});
+});
+
+    </script>
   </body>
 </html>

@@ -15,6 +15,7 @@ h1 {
 h2, h3 {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 22px; }
 
 /*# sourceMappingURL=typography.css.map */

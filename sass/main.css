@@ -4,6 +4,24 @@
 File: Media query breakpoints
 Author: Matthew Cobb
 /* ===========================================================*/
+@media (min-width: 768px) {
+  /* line 19, /Users/Jonkob/Code/indie/sass/breakpoints.scss */
+  .container {
+    width: 750px; }
+ }
+
+@media (min-width: 992px) {
+  /* line 24, /Users/Jonkob/Code/indie/sass/breakpoints.scss */
+  .container {
+    width: 940px; }
+ }
+
+@media (min-width: 1200px) {
+  /* line 29, /Users/Jonkob/Code/indie/sass/breakpoints.scss */
+  .container {
+    width: 940px; }
+ }
+
 /* line 4, /Users/Jonkob/Code/indie/sass/typography.scss */
 h1, h2, h3, h4, h5, h6, a, p {
   margin: 0;
@@ -19,19 +37,41 @@ h1 {
 h2, h3 {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 22px; }
 
-/* line 7, /Users/Jonkob/Code/indie/sass/main.scss */
+/* line 1, /Users/Jonkob/Code/indie/sass/nav.scss */
+.nav-collapse {
+  position: relative;
+  height: 0px;
+  overflow: hidden; }
+
+/* line 8, /Users/Jonkob/Code/indie/sass/nav.scss */
+.active {
+  height: 150px; }
+
+/* line 8, /Users/Jonkob/Code/indie/sass/main.scss */
 html {
   width: 100%;
   height: 100%; }
 
-/* line 12, /Users/Jonkob/Code/indie/sass/main.scss */
+/* line 13, /Users/Jonkob/Code/indie/sass/main.scss */
 body {
   width: 100%;
   height: 100%; }
 
-/* line 17, /Users/Jonkob/Code/indie/sass/main.scss */
+/* line 18, /Users/Jonkob/Code/indie/sass/main.scss */
+.burger {
+  position: absolute;
+  z-index: 2;
+  width: 30px;
+  top: 15px;
+  height: 21px; }
+  @media (min-width: 768px) {
+    .burger {
+      display: none; } }
+
+/* line 29, /Users/Jonkob/Code/indie/sass/main.scss */
 .hero {
   background: #13D7B8;
   height: 360px;
@@ -42,16 +82,16 @@ body {
   @media (min-width: 600px) {
     .hero {
       height: 500px; } }
-  /* line 28, /Users/Jonkob/Code/indie/sass/main.scss */
-  .hero img {
-    margin: 50px 0px 50px 0px; }
+  /* line 40, /Users/Jonkob/Code/indie/sass/main.scss */
+  .hero .logo {
+    margin: 40px 0px 40px 0px; }
     @media (min-width: 500px) {
-      .hero img {
+      .hero .logo {
         margin: 60px 0px 60px 0px; } }
     @media (min-width: 600px) {
-      .hero img {
+      .hero .logo {
         margin: 70px 0px 70px 0px; } }
-  /* line 38, /Users/Jonkob/Code/indie/sass/main.scss */
+  /* line 50, /Users/Jonkob/Code/indie/sass/main.scss */
   .hero h1 {
     color: #fff;
     text-align: center;
@@ -62,21 +102,54 @@ body {
     @media (min-width: 600px) {
       .hero h1 {
         font-size: 50px; } }
-  /* line 49, /Users/Jonkob/Code/indie/sass/main.scss */
+  /* line 61, /Users/Jonkob/Code/indie/sass/main.scss */
   .hero h2 {
     color: #fff;
     text-align: center; }
     @media (min-width: 500px) {
       .hero h2 {
         font-size: 18px; } }
-  /* line 57, /Users/Jonkob/Code/indie/sass/main.scss */
+  /* line 69, /Users/Jonkob/Code/indie/sass/main.scss */
   .hero h3 {
     color: #128974;
     text-align: center;
-    margin: 20px 0 10px 0; }
+    margin: 30px 0 20px 0; }
     @media (min-width: 500px) {
       .hero h3 {
         font-size: 18px;
-        margin: 40px 0 10px 0; } }
+        margin: 20px 0 20px 0; } }
+    @media (min-width: 600px) {
+      .hero h3 {
+        font-size: 18px;
+        margin: 40px 0 30px 0; } }
+  /* line 83, /Users/Jonkob/Code/indie/sass/main.scss */
+  .hero a {
+    font-size: 16px;
+    color: #13D7B8; }
+  /* line 88, /Users/Jonkob/Code/indie/sass/main.scss */
+  .hero .btn-default {
+    border: 0px;
+    width: 100%;
+    padding: 12px 0px 12px 0px; }
+    @media (min-width: 500px) {
+      .hero .btn-default {
+        width: 200px; } }
+
+/* line 100, /Users/Jonkob/Code/indie/sass/main.scss */
+.main-section h1 {
+  font-size: 20px;
+  color: #13D7B8;
+  margin: 30px 0px 10px 0px; }
+  @media (min-width: 600px) {
+    .main-section h1 {
+      font-size: 28px;
+      margin: 60px 0 10px 0; } }
+/* line 109, /Users/Jonkob/Code/indie/sass/main.scss */
+.main-section h2 {
+  font-size: 16px; }
+  @media (min-width: 600px) {
+    .main-section h2 {
+      font-size: 20px;
+      line-height: 28px; } }
 
 /*# sourceMappingURL=main.css.map */
