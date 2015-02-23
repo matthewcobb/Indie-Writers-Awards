@@ -3,7 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Glegoo:400,700);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic);
 
-h1,h2,h3,h4,h5,h6,a,p{
+h1,h2,h3,h4,h5,h6,p{
   margin: 0;
   padding: 0;
   color: $color-black;
@@ -30,4 +30,23 @@ h4{
   @media (min-width:$bp-small) {
       font-size:20px;
     }
+}
+
+a{
+  color: $color-turq;
+}
+
+a:hover{
+  color: $color-dark-turq;
+}
+
+a:visited{
+  color: $color-turq;
+}
+
+.modal-title{
+  font-family: 'Glegoo', serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: $color-white;
 }

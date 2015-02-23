@@ -6,7 +6,7 @@ Author: Matthew Cobb
 /* ===========================================================*/
 
 $bp-xx-small:400px;
-$bp-x-small:500px;
+$bp-x-small:480px;
 $bp-small:600px;
 $bp-medium:768px;
 $bp-m-large:900px;
@@ -23,11 +23,6 @@ $bp-xx-large:1200px;
   }
 }
 @media (min-width: 992px) {
-  .container {
-    width: 940px;
-  }
-}
-@media (min-width: 1200px) {
   .container {
     width: 940px;
   }
