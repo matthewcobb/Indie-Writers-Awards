@@ -1,28 +1,30 @@
 /*
-Error: Undefined variable: "$bp-medium".
-        on line 18 of /Users/Jonkob/Code/indie/sass/nav.scss
+Error: Undefined variable: "$color-black".
+        on line 9 of /Users/Jonkob/Code/indie/sass/modules/typography.scss
+        from line 3 of /Users/Jonkob/Code/indie/sass/base.scss
+        from line 1 of /Users/Jonkob/Code/indie/sass/modules/colors.scss
+        from line 1 of /Users/Jonkob/Code/indie/sass/modules/nav.scss
 
-13:       color: $color-white;
-14:       text-align: center;
-15:       background:$color-dark-turq;
-16:       font-family: 'Lato', sans-serif;
-17:       font-size: 20px;
-18:       @media (min-width:$bp-medium){
-19:         background:none;
-20:         font-size:14px;
-21:       }
-22:
-23:       &:hover,
+4: .navbar-default {
+5:   background-color: $color-turq;
+6:   border:none;
+7:
+8:   .navbar-text {
+9:     color: $color-white;
+10:   }
+11:
+12:   .navbar-nav {
+13:     > li > a {
+14:       color: $color-white;
 
 Backtrace:
-/Users/Jonkob/Code/indie/sass/nav.scss:18
+/Users/Jonkob/Code/indie/sass/modules/typography.scss:9
+/Users/Jonkob/Code/indie/sass/base.scss:3
+/Users/Jonkob/Code/indie/sass/modules/colors.scss:1
+/Users/Jonkob/Code/indie/sass/modules/nav.scss:1
 /usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/script/tree/node.rb:50:in `perform'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:536:in `block in run_interp_no_strip'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:534:in `map'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:534:in `run_interp_no_strip'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:541:in `run_interp'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:509:in `visit_media'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
 /usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
 /usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `block in with_base'
@@ -40,22 +42,39 @@ Backtrace:
 /usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:115:in `with_frame'
 /usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `with_base'
 /usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:430:in `map'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:325:in `map'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:88:in `block in with_import'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:88:in `with_import'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
 /usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
 /usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `block in with_base'
 /usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:115:in `with_frame'
 /usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `with_base'
 /usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:430:in `map'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:325:in `map'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:88:in `block in with_import'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:88:in `with_import'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `with_base'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:325:in `map'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:88:in `block in with_import'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:88:in `with_import'
+/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
 /usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
 /usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `block in with_base'
@@ -95,4 +114,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$bp-medium\".\A         on line 18 of /Users/Jonkob/Code/indie/sass/nav.scss\A \A 13:       color: $color-white;\A 14:       text-align: center;\A 15:       background:$color-dark-turq;\A 16:       font-family: 'Lato', sans-serif;\A 17:       font-size: 20px;\A 18:       @media (min-width:$bp-medium){\A 19:         background:none;\A 20:         font-size:14px;\A 21:       }\A 22:       \A 23:       &:hover,"; }
+  content: "Error: Undefined variable: \"$color-black\".\A         on line 9 of /Users/Jonkob/Code/indie/sass/modules/typography.scss\A         from line 3 of /Users/Jonkob/Code/indie/sass/base.scss\A         from line 1 of /Users/Jonkob/Code/indie/sass/modules/colors.scss\A         from line 1 of /Users/Jonkob/Code/indie/sass/modules/nav.scss\A \A 4: .navbar-default {\A 5:   background-color: $color-turq;\A 6:   border:none;\A 7: \A 8:   .navbar-text {\A 9:     color: $color-white;\A 10:   }\A 11: \A 12:   .navbar-nav {\A 13:     > li > a {\A 14:       color: $color-white;"; }

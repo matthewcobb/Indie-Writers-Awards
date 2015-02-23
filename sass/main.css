@@ -23,86 +23,154 @@ Author: Matthew Cobb
  }
 
 /* line 4, /Users/Jonkob/Code/indie/sass/typography.scss */
-h1, h2, h3, h4, h5, h6, a, p {
+h1, h2, h3, h3, h5, h6, a, p {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: #4A4A4A; }
 
-/* line 9, /Users/Jonkob/Code/indie/sass/typography.scss */
+/* line 10, /Users/Jonkob/Code/indie/sass/typography.scss */
 h1 {
   font-family: 'Glegoo', serif;
   font-weight: 400;
   font-size: 28px; }
 
-/* line 15, /Users/Jonkob/Code/indie/sass/typography.scss */
+/* line 16, /Users/Jonkob/Code/indie/sass/typography.scss */
 h2, h3 {
   font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 22px; }
 
-/* line 3, /Users/Jonkob/Code/indie/sass/nav.scss */
+/* line 23, /Users/Jonkob/Code/indie/sass/typography.scss */
+h3 {
+  font-family: 'Glegoo', serif;
+  font-weight: 700;
+  color: #4A4A4A;
+  font-size: 16px; }
+  @media (min-width: 600px) {
+    h3 {
+      font-size: 20px; } }
+
+/* ===========================================================
+File: Media query breakpoints
+Author: Matthew Cobb
+/* ===========================================================*/
+@media (min-width: 768px) {
+  /* line 19, /Users/Jonkob/Code/indie/sass/breakpoints.scss */
+  .container {
+    width: 750px; }
+ }
+
+@media (min-width: 992px) {
+  /* line 24, /Users/Jonkob/Code/indie/sass/breakpoints.scss */
+  .container {
+    width: 940px; }
+ }
+
+@media (min-width: 1200px) {
+  /* line 29, /Users/Jonkob/Code/indie/sass/breakpoints.scss */
+  .container {
+    width: 940px; }
+ }
+
+/* line 4, /Users/Jonkob/Code/indie/sass/nav.scss */
 .navbar-default {
   background-color: #13D7B8;
   border: none; }
-  /* line 7, /Users/Jonkob/Code/indie/sass/nav.scss */
+  /* line 8, /Users/Jonkob/Code/indie/sass/nav.scss */
   .navbar-default .navbar-text {
     color: #fff; }
-  /* line 12, /Users/Jonkob/Code/indie/sass/nav.scss */
+  /* line 13, /Users/Jonkob/Code/indie/sass/nav.scss */
   .navbar-default .navbar-nav > li > a {
     color: #fff;
     text-align: center;
-    background: #128974;
     font-family: 'Lato', sans-serif;
     font-size: 20px; }
     @media (min-width: 768px) {
       .navbar-default .navbar-nav > li > a {
         background: none;
         font-size: 14px; } }
-    /* line 24, /Users/Jonkob/Code/indie/sass/nav.scss */
+    /* line 25, /Users/Jonkob/Code/indie/sass/nav.scss */
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
       color: #128974;
       background-color: none; }
-  /* line 32, /Users/Jonkob/Code/indie/sass/nav.scss */
+  /* line 33, /Users/Jonkob/Code/indie/sass/nav.scss */
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #fff;
     background-color: none; }
-  /* line 40, /Users/Jonkob/Code/indie/sass/nav.scss */
+  /* line 41, /Users/Jonkob/Code/indie/sass/nav.scss */
   .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
     color: #fff;
     background-color: none; }
-  /* line 47, /Users/Jonkob/Code/indie/sass/nav.scss */
+  /* line 48, /Users/Jonkob/Code/indie/sass/nav.scss */
   .navbar-default .navbar-toggle {
     border: none; }
-    /* line 50, /Users/Jonkob/Code/indie/sass/nav.scss */
+    /* line 51, /Users/Jonkob/Code/indie/sass/nav.scss */
     .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
       background-color: #128974; }
-    /* line 53, /Users/Jonkob/Code/indie/sass/nav.scss */
+    /* line 54, /Users/Jonkob/Code/indie/sass/nav.scss */
     .navbar-default .navbar-toggle .icon-bar {
       background-color: #fff; }
-  /* line 59, /Users/Jonkob/Code/indie/sass/nav.scss */
+  /* line 60, /Users/Jonkob/Code/indie/sass/nav.scss */
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border: none; }
-  /* line 69, /Users/Jonkob/Code/indie/sass/nav.scss */
+  /* line 70, /Users/Jonkob/Code/indie/sass/nav.scss */
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     background-color: none;
     color: #fff; }
   @media (max-width: 786px) {
-    /* line 78, /Users/Jonkob/Code/indie/sass/nav.scss */
+    /* line 79, /Users/Jonkob/Code/indie/sass/nav.scss */
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
       color: #fff; }
-      /* line 81, /Users/Jonkob/Code/indie/sass/nav.scss */
+      /* line 82, /Users/Jonkob/Code/indie/sass/nav.scss */
       .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
         color: #fff;
         background-color: none; }
-      /* line 88, /Users/Jonkob/Code/indie/sass/nav.scss */
+      /* line 89, /Users/Jonkob/Code/indie/sass/nav.scss */
       .navbar-default .navbar-nav .open .dropdown-menu > li > a > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > li > a > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a > .active > a:focus {
         color: #fff;
         background-color: none; }
-      /* line 96, /Users/Jonkob/Code/indie/sass/nav.scss */
+      /* line 97, /Users/Jonkob/Code/indie/sass/nav.scss */
       .navbar-default .navbar-nav .open .dropdown-menu > li > a > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > li > a > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a > .disabled > a:focus {
         color: #fff;
         background-color: none; }
  }
+
+/* line 108, /Users/Jonkob/Code/indie/sass/nav.scss */
+.navbar {
+  margin-bottom: 0px;
+  background: #13D7B8;
+  border: none;
+  border-radius: 0px; }
+  @media (min-width: 768px) {
+    .navbar ul {
+      float: right; } }
+  /* line 120, /Users/Jonkob/Code/indie/sass/nav.scss */
+  .navbar li {
+    padding: 10px 0px 10px 0px;
+    background: #128974; }
+    @media (min-width: 768px) {
+      .navbar li {
+        background: none; } }
+
+/* line 130, /Users/Jonkob/Code/indie/sass/nav.scss */
+.navbar-nav {
+  margin: 0px -15px 0px -15px; }
+
+/* line 134, /Users/Jonkob/Code/indie/sass/nav.scss */
+.navbar-header {
+  border-bottom: none; }
+
+/* line 138, /Users/Jonkob/Code/indie/sass/nav.scss */
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 30px;
+  height: 2px;
+  border-radius: 1px; }
+
+/* line 145, /Users/Jonkob/Code/indie/sass/nav.scss */
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 6px; }
 
 /* line 8, /Users/Jonkob/Code/indie/sass/main.scss */
 html {
@@ -115,17 +183,6 @@ body {
   height: 100%; }
 
 /* line 18, /Users/Jonkob/Code/indie/sass/main.scss */
-.burger {
-  position: absolute;
-  z-index: 2;
-  width: 30px;
-  top: 15px;
-  height: 21px; }
-  @media (min-width: 768px) {
-    .burger {
-      display: none; } }
-
-/* line 29, /Users/Jonkob/Code/indie/sass/main.scss */
 .hero {
   background: #13D7B8;
   height: 360px;
@@ -136,16 +193,16 @@ body {
   @media (min-width: 600px) {
     .hero {
       height: 500px; } }
-  /* line 40, /Users/Jonkob/Code/indie/sass/main.scss */
+  /* line 29, /Users/Jonkob/Code/indie/sass/main.scss */
   .hero .logo {
-    margin: 40px 0px 40px 0px; }
+    margin: 20px 0px 40px 0px; }
     @media (min-width: 500px) {
       .hero .logo {
-        margin: 60px 0px 60px 0px; } }
+        margin: 30px 0px 60px 0px; } }
     @media (min-width: 600px) {
       .hero .logo {
-        margin: 70px 0px 70px 0px; } }
-  /* line 50, /Users/Jonkob/Code/indie/sass/main.scss */
+        margin: 40px 0px 70px 0px; } }
+  /* line 39, /Users/Jonkob/Code/indie/sass/main.scss */
   .hero h1 {
     color: #fff;
     text-align: center;
@@ -156,31 +213,31 @@ body {
     @media (min-width: 600px) {
       .hero h1 {
         font-size: 50px; } }
-  /* line 61, /Users/Jonkob/Code/indie/sass/main.scss */
+  /* line 50, /Users/Jonkob/Code/indie/sass/main.scss */
   .hero h2 {
     color: #fff;
     text-align: center; }
     @media (min-width: 500px) {
       .hero h2 {
         font-size: 18px; } }
-  /* line 69, /Users/Jonkob/Code/indie/sass/main.scss */
+  /* line 58, /Users/Jonkob/Code/indie/sass/main.scss */
   .hero h3 {
     color: #128974;
     text-align: center;
-    margin: 30px 0 20px 0; }
+    margin: 50px 0 20px 0; }
     @media (min-width: 500px) {
       .hero h3 {
         font-size: 18px;
-        margin: 20px 0 20px 0; } }
+        margin: 40px 0 20px 0; } }
     @media (min-width: 600px) {
       .hero h3 {
         font-size: 18px;
-        margin: 40px 0 30px 0; } }
-  /* line 83, /Users/Jonkob/Code/indie/sass/main.scss */
+        margin: 60px 0 30px 0; } }
+  /* line 72, /Users/Jonkob/Code/indie/sass/main.scss */
   .hero a {
-    font-size: 16px;
+    font-size: 20px;
     color: #13D7B8; }
-  /* line 88, /Users/Jonkob/Code/indie/sass/main.scss */
+  /* line 77, /Users/Jonkob/Code/indie/sass/main.scss */
   .hero .btn-default {
     border: 0px;
     width: 100%;
@@ -189,7 +246,7 @@ body {
       .hero .btn-default {
         width: 200px; } }
 
-/* line 100, /Users/Jonkob/Code/indie/sass/main.scss */
+/* line 89, /Users/Jonkob/Code/indie/sass/main.scss */
 .main-section h1 {
   font-size: 20px;
   color: #13D7B8;
@@ -198,7 +255,7 @@ body {
     .main-section h1 {
       font-size: 28px;
       margin: 60px 0 10px 0; } }
-/* line 109, /Users/Jonkob/Code/indie/sass/main.scss */
+/* line 98, /Users/Jonkob/Code/indie/sass/main.scss */
 .main-section h2 {
   font-size: 16px; }
   @media (min-width: 600px) {
@@ -206,21 +263,39 @@ body {
       font-size: 20px;
       line-height: 28px; } }
 
-/* line 118, /Users/Jonkob/Code/indie/sass/main.scss */
-.navbar {
-  margin-bottom: 0px;
+/* line 107, /Users/Jonkob/Code/indie/sass/main.scss */
+.bookaward {
   background: #13D7B8;
-  border: none;
-  border-radius: 0px; }
-
-@media (min-width: 768px) {
+  margin: 30px 15px 0px 15px;
+  border-radius: 5px;
+  padding: 15px;
+  width: 85%; }
+  @media (min-width: 600px) {
+    .bookaward {
+      display: none; } }
+  /* line 117, /Users/Jonkob/Code/indie/sass/main.scss */
+  .bookaward h1 {
+    color: #fff;
+    font-size: 25px; }
+  /* line 122, /Users/Jonkob/Code/indie/sass/main.scss */
+  .bookaward h2 {
+    color: #fff; }
   /* line 126, /Users/Jonkob/Code/indie/sass/main.scss */
-  .navbar ul {
-    float: right; }
- }
+  .bookaward img {
+    position: absolute;
+    right: -10%;
+    top: -10px; }
 
-/* line 131, /Users/Jonkob/Code/indie/sass/main.scss */
-.navbar-header {
-  border-bottom: none; }
+/* line 134, /Users/Jonkob/Code/indie/sass/main.scss */
+.category ul {
+  margin: 15px;
+  padding: 0px;
+  list-style: none; }
+  @media (min-width: 600px) {
+    .category ul {
+      margin-top: 30px; } }
+/* line 142, /Users/Jonkob/Code/indie/sass/main.scss */
+.category li {
+  margin-top: 15px; }
 
 /*# sourceMappingURL=main.css.map */
