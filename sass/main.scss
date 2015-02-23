@@ -234,6 +234,9 @@ body{
     font-weight: 400;
     font-size: 20px;
     color: $color-turq;
+     @media (min-width:$bp-x-small) and (max-width:$bp-medium) {
+        margin: 15px;
+      }
   }
 
   h3{
@@ -383,6 +386,7 @@ body{
   border:none;
   background: $color-turq;
   height: 40px;
+  color:$color-white;
 }
 
 .btn-default{
@@ -393,4 +397,29 @@ body{
 
 .btn-primary:hover{
   background: $color-dark-turq;
+}
+
+.nav-alt{
+  position: relative;
+  height: 55px;
+  background: $color-turq;
+  width: 100%;
+
+
+  h1{
+    color: $color-white;
+    padding: 12px;
+    clear:both;
+    position: absolute;
+  }
+
+  a{
+    float: right;
+    clear: both;
+    margin: 6px;
+  }
+}
+
+.upload{
+  max-width: 500px;
 }
