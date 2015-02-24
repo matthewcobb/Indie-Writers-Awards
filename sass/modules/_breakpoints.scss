@@ -9,7 +9,7 @@ $bp-xx-small:400px;
 $bp-x-small:480px;
 $bp-small:600px;
 $bp-medium:768px;
-$bp-m-large:900px;
+$bp-m-large:992px;
 $bp-large:1025px;
 $bp-x-large:1100px;
 $bp-xx-large:1200px;
@@ -17,11 +17,6 @@ $bp-xx-large:1200px;
 //eg usage
 //@media (min-width:$bp-small) {}
 
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
 @media (min-width: 992px) {
   .container {
     width: 940px;

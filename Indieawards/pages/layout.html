@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="{{assetsUrl}}/assets/favicon.png">
+
+    <title>Stamplay | An awesome new app</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{assetsUrl}}/assets/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{assetsUrl}}/assets/jumbotron-narrow.css" rel="stylesheet">
+    <link href="{{assetsUrl}}/assets/widget.css" rel="stylesheet">
+
+  </head>
+
+  <body ng-app="app">
+     <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <h3 class="text-muted">{{appId}}.stamplay.com</h3>
+      </div>
+    {{{body}}}
+      <div class="footer">
+        <p>&copy; Stamplay <script>document.write(new Date().getFullYear());</script></p>
+      </div>
+
+    </div> <!-- /container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>
+      var _APP_ID = "{{appId}}";
+      var _ASSETS_URL = "{{assetsUrl}}";
+    </script>
+    <script src="{{assetsUrl}}/assets/stamplay-ng.min.js"></script>
+    <!-- GOOGLE ANALYTICS -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', '{{appRecipe.ga}}']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

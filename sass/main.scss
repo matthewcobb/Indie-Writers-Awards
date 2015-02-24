@@ -22,22 +22,19 @@ body{
   opacity: 0.85;
   position: absolute;
   width: 100%;
-  height:550px;
+  height: 100%;
 }
 
 .bg{
   position: relative;
   width: 100%;
   overflow: hidden;
-  height: 450px;
-  background: url('../img/m.jpg') center top;
+  background: url('../img/m.jpg') center bottom;
     @media (min-width:$bp-small) {
-      height:550px;
-      background: url('../img/l.jpg') center top;
+      background: url('../img/l.jpg') center bottom;
     }
     @media (min-width:$bp-xx-large) {
-      height:550px;
-      background: url('../img/xl.jpg') center top;
+      background: url('../img/xl.jpg') center bottom;
     }
 }
 
@@ -45,21 +42,12 @@ body{
   height: 360px;
   overflow: hidden;
   text-align: center;
-    @media (min-width:$bp-x-small) {
-      height:400px;
-    }
     @media (min-width:$bp-small) {
-      height:500px;
-    }
-    @media (min-width:$bp-xx-large) {
-      height:500px;
+      height:480px;
     }
 
   .logo{
     margin:20px 0px 40px 0px;
-      @media (min-width:$bp-x-small) {
-        margin:30px 0px 60px 0px;
-      }
       @media (min-width:$bp-small) {
         margin:40px 0px 70px 0px;
       }
@@ -69,9 +57,6 @@ body{
     color:$color-white;
     text-align: center;
     margin:0px 0px 5px 0px;
-     @media (min-width:$bp-x-small) {
-        font-size: 35px;
-      }
       @media (min-width:$bp-small) {
         font-size: 50px;
       }
@@ -88,11 +73,7 @@ body{
   h3{
     color:$color-dark-turq;
     text-align: center;
-    margin:50px 0 20px 0;
-      @media (min-width:$bp-x-small) {
-        font-size: 18px;
-        margin:40px 0 20px 0;
-      }
+    margin:30px 0 20px 0;
       @media (min-width:$bp-small) {
         font-size: 18px;
         margin:60px 0 30px 0;
@@ -109,14 +90,13 @@ body{
     width:100%;
     height: 50px;
     padding: 12px 0px 12px 0px;
-      @media (min-width:$bp-x-small) {
+      @media (min-width:$bp-small) {
         width:200px;
       }
-  }
 
-  .btn-default:hover{
-    background: $color-light-grey;
-    color: $color-turq;
+      &:hover{
+        background: $color-light-grey;
+        color: $color-turq;}
   }
 
 }
@@ -262,7 +242,7 @@ body{
     width: 100%;
     overflow: hidden;
     margin-bottom: 15px;
-      @media (min-width:$bp-medium) {
+      @media (min-width:$bp-m-large) {
         height:250px;
       }
 
@@ -382,38 +362,23 @@ body{
   }
 }
 
-.btn-primary{
-  border:none;
-  background: $color-turq;
-  height: 40px;
-  color:$color-white;
-}
-
-.btn-default{
-  border:none;
-  background: $color-light-grey;
-  height: 40px;
-}
-
-.btn-primary:hover{
-  background: $color-dark-turq;
-}
-
 .nav-alt{
   position: relative;
   height: 55px;
   background: $color-turq;
   width: 100%;
 
-
-  h1{
+  .alt-title{
     color: $color-white;
     padding: 12px;
     clear:both;
     position: absolute;
+    font-family: 'Glegoo', serif;
+    font-weight: 400;
+    font-size: 20px;
   }
 
-  a{
+  .logout{
     float: right;
     clear: both;
     margin: 6px;
@@ -422,4 +387,20 @@ body{
 
 .upload{
   max-width: 500px;
+}
+
+.uploadform{
+  margin-bottom:60px;
+}
+
+.congrats{
+  margin-top: 60px;
+  width:100px; height:100px;
+     @media (min-width:$bp-small) {
+        width:250px; height: 250px;
+      }
+}
+
+.center{
+  text-align: center;
 }

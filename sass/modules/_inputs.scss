@@ -1,0 +1,19 @@
+@import '../_base';
+
+.input-group{
+  input{
+    width:100%;
+  }
+
+  label{
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 15px;
+    font-family: 'Lato', sans-serif;
+  }
+  h3{
+    color:$color-grey;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+}
