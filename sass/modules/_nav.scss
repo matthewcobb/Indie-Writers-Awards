@@ -22,8 +22,9 @@
 
       &:hover,
       &:focus {
-        color: $color-dark-turq;
         background-color:none;
+        color:$color-white;
+        text-decoration: underline;
       }
     }
     > .active > a {
